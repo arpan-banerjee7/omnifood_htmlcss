@@ -88,4 +88,18 @@ $(".js--wp-4").waypoint(
     offset: "50%",
   }
 );
-//amking dummy changes
+/* Mobile navigation */
+$(".js--nav-icon").click(function () {
+  var nav = $(".js--main-nav");
+  var icon = $(".js--nav-icon ion-icon");
+
+  nav.slideToggle(200);
+
+  if (icon.attr("name") == "menu-outline") {
+    icon.attr("name", "close-outline");
+    icon.text("close-outline");
+  } else {
+    icon.attr("name", "menu-outline");
+    icon.text("menu-outline");
+  }
+});

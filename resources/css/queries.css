@@ -88,14 +88,12 @@
     margin: 0 0 4% 0;
   }
 
-  .main-nav {
-    display: none;
-  }
   .mobile-nav-icon {
     display: inline-block;
   }
 
   .main-nav {
+    display: none;
     float: left;
     margin-top: 30px;
     margin-left: 25px;
@@ -124,7 +122,7 @@
   .sticky .mobile-nav-icon {
     margin-top: 10px;
   }
-  .sticky .mobile-nav-icon i {
+  .sticky .mobile-nav-icon ion-icon {
     color: #555;
   }
 
