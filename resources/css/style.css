@@ -232,6 +232,14 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  display: none;
+}
+/*Normal navi*/
 .main-nav {
   float: right;
   list-style: none;
@@ -260,6 +268,35 @@ header {
   border-bottom: 2px solid #cf6d17;
 }
 
+/*Sticky navi*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.993);
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 17px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: inline-block;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
 /*----------------------------------------------*/
 /* FEATURES */
 /*----------------------------------------------*/
@@ -445,7 +482,7 @@ cite img {
 /*Sign Up*/
 /*----------------------------------------------*/
 
-.section-plan {
+.section-plans {
   background-color: rgb(247, 241, 241);
 }
 
@@ -608,4 +645,20 @@ footer p {
   color: #888;
   text-align: center;
   margin-top: 20px;
+}
+
+/*----------------------------------------------*/
+/*ANIMATIONS*/
+/*----------------------------------------------*/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
 }
